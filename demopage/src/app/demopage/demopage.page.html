@@ -14,9 +14,7 @@
         <ion-row>
           <ion-col size="3"><ion-searchbar color="tertiar-contrast" placeholder="Search"></ion-searchbar></ion-col>
           <ion-col size="2"><ion-button class="ayusin" style="width: 150px" shape="round" color="danger">Search</ion-button></ion-col>
-          <ion-col offset="5" size="2"><ion-button class="ayusin2" style="padding :8px" color="light"><ion-icon name="refresh-outline"></ion-icon>Refresh</ion-button></ion-col>
-
-          
+          <ion-col offset="5" size="2"><ion-button color="light"><ion-icon size="small" name="refresh-outline"></ion-icon>Refresh</ion-button></ion-col>
         </ion-row>
       </ion-grid>
 
@@ -34,6 +32,27 @@
         <ION-COL size="1">SUB WRAP UP</ION-COL>
         <ION-COL size="1">RENARKS</ION-COL>
       </ion-row>
+
+      <ion-row class="table-data" *ngFor="let dm of [1,2,3,4,5]">
+        <ion-col size="1">1234567890</ion-col>
+        <ion-col size="1">2024-06-01 10:00:00</ion-col>
+        <ion-col size="1">9876543210</ion-col>
+        <ion-col size="1">John Doe</ion-col>
+        <ion-col size="1">09171234567</ion-col>
+        <ion-col size="1">CASE12345</ion-col>
+        <ion-col size="1">Manila</ion-col>
+        <ion-col size="1">WO12345</ion-col> 
+
+        <ion-col size="1">Program A</ion-col>
+        <ion-col size="1">Wrap Up A</ion-col>
+        <ion-col size="1">Sub Wrap Up A</ion-col>
+        <ion-col size="1">Remarks for call {{dm}}</ion-col>
+      </ion-row>
+
+
+
+
+
     </ion-card>
   </ion-card-content>
 
