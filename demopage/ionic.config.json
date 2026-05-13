@@ -1,0 +1,7 @@
+{
+  "name": "demopage",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
