@@ -1,13 +1,40 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>demopage</ion-title>
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>
+      <h4>Call Tagging Assistant</h4>
+      <ion-text class="tag1">PLDT PCX</ion-text>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">demopage</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card-content>
+    <ion-card>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="3"><ion-searchbar color="tertiar-contrast" placeholder="Search"></ion-searchbar></ion-col>
+          <ion-col size="2"><ion-button class="ayusin" style="width: 150px" shape="round" color="danger">Search</ion-button></ion-col>
+          <ion-col offset="5" size="2"><ion-button class="ayusin2" style="padding :8px" color="light"><ion-icon name="refresh-outline"></ion-icon>Refresh</ion-button></ion-col>
+
+          
+        </ion-row>
+      </ion-grid>
+
+      <ion-row class="table-header">
+        <ion-col size="1">CALL ID</ion-col>
+        <ion-col size="1">DATE/TIME</ion-col>
+        <ion-col size="1">ACCOUNT NUMBER</ion-col>
+        <ion-col size="1">AGENT</ion-col>
+        <ion-col size="1">MOBILE NUMBER</ion-col>
+        <ion-col size="1">CASE NUMBER</ion-col>
+        <ion-col size="1">AREA</ion-col>
+        <ion-col size="1">WORK ORDER</ion-col>
+        <ion-col size="1">PROGRAM</ion-col>
+        <ion-col size="1">WRAP UP</ion-col>
+        <ION-COL size="1">SUB WRAP UP</ION-COL>
+        <ION-COL size="1">RENARKS</ION-COL>
+      </ion-row>
+    </ion-card>
+  </ion-card-content>
+
 </ion-content>
